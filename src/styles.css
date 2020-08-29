@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    overflow: hidden;
+    background-color: rgb(214, 85, 85);
+}
+
+button{
+    cursor: pointer;
+}
+
+*{
+    box-sizing: border-box;
+}

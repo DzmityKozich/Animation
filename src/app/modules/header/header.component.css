@@ -1,0 +1,39 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px rgba(0, 0, 0, .15) solid;
+}
+
+.header__logo{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: .3em;
+}
+
+.nav{
+    font-size: 16px;
+}
+
+.nav__item{
+    margin-left: 10px;
+    padding: .3em 1em;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.1s linear;
+}
+
+.nav__item:hover{
+    background-color: rgba(0, 0, 0, .15);
+}

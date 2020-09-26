@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { NgElement, WithProperties } from '@angular/elements';
-import { HeartsComponent } from './hearts/hearts.component';
+import { HeartsComponent } from './hearts.component';
 import { interval } from 'rxjs';
 
 @Injectable({
@@ -9,8 +9,6 @@ import { interval } from 'rxjs';
 
 export class HeartsService{
 
-  // tslint:disable-next-line: no-inferrable-types
-  private toggle: boolean = false;
   private stream: any;
 
   constructor() { }
@@ -23,9 +21,8 @@ export class HeartsService{
 
   }
 
-  public createHeartsStream(): void {
-    this.toggle = !this.toggle;
-    if (this.toggle) {
+  public createHeartsStream(toggle: boolean): void {
+    if (toggle) {
       this.stream = setInterval(() => this.createHeart(), 300);
     } else {
       clearInterval(this.stream);

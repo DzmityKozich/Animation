@@ -3,21 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeartsComponent } from './animations/hearts/hearts.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { HeartsComponent } from './animations/hearts/hearts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeartsComponent
+    HeartsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [HeartsComponent]
 })
 export class AppModule { }

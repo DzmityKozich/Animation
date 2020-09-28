@@ -38,3 +38,14 @@ button{
     color: inherit;
     font-size: inherit;
 }
+
+/* Border */
+.border{
+    border: 2px #000000 solid;
+    border-radius: 5px;
+}
+
+/* Shadow */
+.shadow{
+    box-shadow: 0 0 10px #00000075;
+}

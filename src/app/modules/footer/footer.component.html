@@ -1,0 +1,16 @@
+<div class="footer">
+    <div class="container">
+        <div class="footer__inner" (@blockAnimation.start)="scrollOff()" [@blockAnimation]="isAnimate">
+            <a href="https://github.com/DzmityKozich" target="_blank"
+                class="footer__item link block--red border shadow">
+                <i class="fab fa-github footer__link"></i>
+            </a>
+            <a class="footer__item link block--blue border shadow" [@clickAnimation]="clickAnimate">
+                <i class="fab fa-linkedin-in footer__link" (click)="trigger()"></i>
+            </a>
+            <a class="footer__item link block--green border shadow">
+                <i class="far fa-file footer__link"></i>
+            </a>
+        </div>
+    </div>
+</div>

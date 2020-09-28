@@ -5,6 +5,7 @@ import { HeartsAnimationPageComponent } from './hearts-animation-page/hearts-ani
 import { RouterModule } from '@angular/router';
 import { HeartsComponent } from '../animations/hearts/hearts.component';
 import { ModulesModule } from '../modules/modules.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ModulesModule } from '../modules/modules.module';
   imports: [
     CommonModule,
     RouterModule,
-    ModulesModule
+    ModulesModule,
+    BrowserAnimationsModule
   ],
   exports: [
     HomeComponent,

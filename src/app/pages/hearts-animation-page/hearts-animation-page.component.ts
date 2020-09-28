@@ -27,14 +27,14 @@ export class HeartsAnimationPageComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.render.addClass(this.bodyEl, 'scroll-off');
+    console.log('ADD in HeartsAnimationPageComponent');
     this.heartService.createHeartsStream(true);
   }
 
   ngOnDestroy(): void {
     this.heartService.createHeartsStream(false);
-    setTimeout(() => {
-      this.render.removeClass(this.bodyEl, 'scroll-off');
-    }, 1000);
+    this.render.removeClass(this.bodyEl, 'scroll-off');
+    console.log('REMOVE in HeartsAnimationPageComponent');
   }
 
 }

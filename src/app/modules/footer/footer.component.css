@@ -1,0 +1,46 @@
+.footer{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.footer__inner{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__item{
+    height: 100px;
+    width: 100px;
+    max-width: 33.33333%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link{
+    font-size: 5em;
+    color: white;
+}
+
+.block--red{
+    background-color: #ff6600;
+}
+
+.block--green{
+    background-color: #2dd700;
+}
+
+.block--yelow{
+    background-color: yellow;
+}
+
+.block--blue{
+    background-color: #104ba9;
+}
